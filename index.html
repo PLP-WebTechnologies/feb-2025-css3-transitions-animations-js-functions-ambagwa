@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css animations</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>CSS Animations and LocalStorage</h2>
+    <div class="cont">
+      <p>This website showcases the following:</p>
+      <ul>
+        <li>Create smooth CSS transitions and animations.</li>
+        <li>Use JavaScript functions for dynamic behavior.</li>
+        <li>Implement local storage for data persistence.</li>
+      </ul>
+    </div>
+
+    <p class="popup">Fill in the form below</p>
+
+    <form id="user-form">
+      <label for="fullname">Your name:</label>
+      <input type="text" id="fullname" placeholder="Eugene Ambagwa" />
+      <br />
+      <label for="age">Age</label>
+      <input
+        type="number"
+        min="18"
+        max="120"
+        id="age"
+        placeholder="Age should be less than 120 and greater than 18"
+      />
+      <button id="submit-id" type="submit">Save to LocalStorage</button>
+    </form>
+
+    <div class="success">Successfully added to local storage</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
